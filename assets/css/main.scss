@@ -63,6 +63,9 @@ header{
 	p{
 		color: #FFF;
 	}
+	img{
+		border: 1px solid #F00;
+	}
 }
 
 nav{
@@ -140,5 +143,6 @@ footer{
 // 	@import 'tablet';
 // } 
 
-//@media screen and (min-width: 1000px) {
-//} 
+@media screen and (min-width: 1000px) {
+	@import 'desktop'
+} 

@@ -82,6 +82,8 @@ header {
       text-decoration: none; }
   header p {
     color: #FFF; }
+  header img {
+    border: 1px solid #F00; }
 
 nav {
   font-weight: 700;
@@ -153,3 +155,73 @@ footer {
 
   .hidesmall {
     display: none; } }
+@media screen and (min-width: 1000px) {
+  .center, hr, header #masthead, #content section, footer nav, footer small {
+    width: 1000px;
+    margin: 0 auto; }
+
+  body {
+    font-size: 1.2em; }
+
+  hr {
+    margin-top: 10px; }
+
+  header #masthead {
+    padding-top: 5px; }
+  header hgroup {
+    display: table-cell;
+    vertical-align: top;
+    width: 530px; }
+    header hgroup h1 {
+      font-size: 90px;
+      margin-bottom: 15px; }
+    header hgroup p {
+      font-size: 25px;
+      line-height: 1.5; }
+  header nav {
+    display: table-cell; }
+    header nav ul li {
+      display: table-cell;
+      position: relative;
+      padding-right: 20px; }
+      header nav ul li span {
+        position: absolute;
+        display: block;
+        bottom: 6px;
+        text-align: center;
+        width: 161px;
+        font-size: 35px;
+        background-color: rgba(200, 200, 200, 0.7);
+        padding-top: 5px;
+        border-top: 1px solid #F00; }
+
+  #content {
+    padding-top: 20px; }
+    #content section:first-child {
+      padding-bottom: 20px; }
+    #content section section {
+      display: table-cell;
+      padding: 5px 0 15px 0;
+      position: relative; }
+      #content section section:first-child {
+        padding-right: 30px; }
+      #content section section:last-child {
+        padding-left: 30px; }
+      #content section section article {
+        padding-bottom: 15px; }
+      #content section section .externalref {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 30px; }
+    #content section hr {
+      display: none; }
+
+  footer {
+    margin-top: 20px; }
+    footer nav ul {
+      clear: both;
+      height: 20px; }
+      footer nav ul li {
+        float: left;
+        margin-right: 20px; } }
