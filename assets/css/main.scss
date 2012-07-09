@@ -3,21 +3,22 @@
 
 
 body{
-	font-family: "news-gothic-std";
+	font-family: "ACaslonPro-Regular", "adobe-caslon-pro";
 	font-weight: 400;
 }
 
 a{
 	color: #F00;
-}
+	@include transition(color .1s ease-in);
+}	
 
 .heading {
-	font-family: "chaparral-pro";
+	font-family: "MyriadPro-SemiboldCond", "myriad-pro-condensed";
 }
 
 h1{
 	@extend .heading;
-	font-weight: 700;
+	font-weight: 600;
 	font-variant: small-caps;
 }
 
@@ -43,7 +44,7 @@ hr:after {
 }
 
 p{
-	font-weight: 300;
+	font-weight: 400;
 }
 
 header{
@@ -69,7 +70,10 @@ nav{
 	font-weight: 700;
 	font-size: 25px;
 	a{
-		text-decoration: none;
+		&:link{color: #FF0000; text-decoration: none;}
+		&:visited{color: #FF0000; text-decoration: none;}
+		&:hover{color: #555555;text-decoration:underline;}
+		&:active{color: #FF0000;text-decoration:underline;}
 	}
 }
 
@@ -93,8 +97,11 @@ nav{
 				font-size: 25px;
 				color: #F00;
 				a{
-					color: #F00;
-					text-decoration: underline
+					
+					&:link{color: #FF0000; text-decoration: none;}
+					&:visited{color: #FF0000; text-decoration: none;}
+					&:hover{color: #555555;text-decoration:underline;}
+					&:active{color: #FF0000;text-decoration:underline;}
 				}
 				
 			}
@@ -103,12 +110,17 @@ nav{
 }
 
 footer{
-	padding: 0 10px;
+	padding: 0 10px 20px 10px;
 	background-color: #000;
 	p{
 		color: #FFF;
 	}
+
+	nav{
+		padding-top: 10px;
+	}
 	small{
+		padding-top: 15px;
 		color: #FFF;
 		display: block;
 	}

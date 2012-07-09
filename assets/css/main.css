@@ -31,17 +31,22 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "news-gothic-std";
+  font-family: "ACaslonPro-Regular", "adobe-caslon-pro";
   font-weight: 400; }
 
 a {
-  color: #F00; }
+  color: #F00;
+  -moz-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in; }
 
 .heading, h1, nav {
-  font-family: "chaparral-pro"; }
+  font-family: "MyriadPro-SemiboldCond", "myriad-pro-condensed"; }
 
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-variant: small-caps; }
 
 hr {
@@ -64,7 +69,7 @@ hr:after {
   color: #E00; }
 
 p {
-  font-weight: 300; }
+  font-weight: 400; }
 
 header {
   padding: 0 10px;
@@ -81,8 +86,18 @@ header {
 nav {
   font-weight: 700;
   font-size: 25px; }
-  nav a {
+  nav a:link {
+    color: #FF0000;
     text-decoration: none; }
+  nav a:visited {
+    color: #FF0000;
+    text-decoration: none; }
+  nav a:hover {
+    color: #555555;
+    text-decoration: underline; }
+  nav a:active {
+    color: #FF0000;
+    text-decoration: underline; }
 
 #content {
   padding: 0 10px; }
@@ -100,16 +115,28 @@ nav {
       #content section article h1 {
         font-size: 25px;
         color: #F00; }
-        #content section article h1 a {
-          color: #F00;
+        #content section article h1 a:link {
+          color: #FF0000;
+          text-decoration: none; }
+        #content section article h1 a:visited {
+          color: #FF0000;
+          text-decoration: none; }
+        #content section article h1 a:hover {
+          color: #555555;
+          text-decoration: underline; }
+        #content section article h1 a:active {
+          color: #FF0000;
           text-decoration: underline; }
 
 footer {
-  padding: 0 10px;
+  padding: 0 10px 20px 10px;
   background-color: #000; }
   footer p {
     color: #FFF; }
+  footer nav {
+    padding-top: 10px; }
   footer small {
+    padding-top: 15px;
     color: #FFF;
     display: block; }
   footer #copyright {
